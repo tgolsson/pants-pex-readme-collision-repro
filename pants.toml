@@ -1,0 +1,26 @@
+[GLOBAL]
+pants_version = "2.15.0rc3"
+
+backend_packages = [
+   "pants.backend.python",
+]
+
+[anonymous-telemetry]
+enabled = false
+
+[source]
+root_patterns = [
+   "cmd"
+]
+
+marker_filenames = ["pyproject.toml"]
+
+
+[python]
+tailor_pex_binary_targets = true
+interpreter_constraints = [">=3.9,<3.10"]
+enable_resolves = true
+default_resolve = "requirements"
+
+[python.resolves]
+requirements = "pants.lock"

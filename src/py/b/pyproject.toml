@@ -1,0 +1,24 @@
+[project]
+name = "b-project"
+description = "bbbbb"
+version = "0.1.0"
+authors = [
+    { name = "Tom Solberg", email = "tom.solberg@embark-studios.com" }
+]
+
+dependencies = []
+
+readme = "README.md"
+license = {file = "LICENSE-MIT.txt"}
+keywords = [""]
+
+classifiers = [ ]
+
+[tool.pdm.build]
+includes = [
+    "b",
+]
+
+[build-system]
+requires = ["pdm-pep517>=1.0.0"]
+build-backend = "pdm.pep517.api"
