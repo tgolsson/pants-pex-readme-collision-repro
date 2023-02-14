@@ -37,7 +37,7 @@ Zip file size: 1203 bytes, number of entries: 5
 3. Try building the pex_binary which includes both packages:
 
 ``` term
-$ pants package cmd::
+$ pants package cmd:main
 10:53:15.75 [ERROR] 1 Exception encountered:
 
 Engine traceback:
